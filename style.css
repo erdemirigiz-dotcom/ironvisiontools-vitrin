@@ -178,6 +178,75 @@ section { padding: 110px 56px; max-width: 1240px; margin: 0 auto; position: rela
 .mc-rows span { font-size: 12px; color: var(--muted); }
 .mc-rows span::before { content: "▸ "; color: var(--ember); }
 
+/* ---------- Aile Arşivi spotlight kartı ---------- */
+.spotlight {
+  display: grid; grid-template-columns: 1.02fr 1fr; align-items: stretch;
+}
+/* 3D anı duvarı temsili — soyut karo mozaiği, gerçek görsel yok */
+.fam-visual {
+  position: relative; overflow: hidden; background: var(--panel2);
+  border-right: 1px solid var(--hair);
+  display: flex; align-items: center; justify-content: center; padding: 34px 26px;
+}
+.fam-visual::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(ellipse at 32% 24%, rgba(255,138,60,.12), transparent 62%);
+}
+.fam-wall {
+  display: grid; width: 100%; max-width: 400px;
+  grid-template-columns: repeat(4, 1fr); grid-auto-rows: 44px; gap: 10px;
+  grid-auto-flow: dense;
+  transform: perspective(760px) rotateX(9deg) rotateY(-11deg); transform-style: preserve-3d;
+}
+.ft {
+  border-radius: 8px; border: 1px solid var(--hair);
+  background: linear-gradient(150deg, rgba(174,188,207,.16), rgba(174,188,207,.04));
+  box-shadow: 0 8px 20px rgba(0,0,0,.35);
+  animation: famfloat 6.5s ease-in-out infinite;
+  animation-delay: calc(var(--d, 0) * -0.7s);
+}
+.ft.w2 { grid-column: span 2; }
+.ft.h2 { grid-row: span 2; }
+.ft.em { background: linear-gradient(150deg, rgba(255,138,60,.30), rgba(255,178,87,.07)); }
+.ft.vid { position: relative; }
+.ft.vid::after {
+  content: ""; position: absolute; inset: 0; margin: auto; width: 0; height: 0;
+  border-left: 13px solid rgba(233,237,244,.82);
+  border-top: 8px solid transparent; border-bottom: 8px solid transparent;
+}
+@keyframes famfloat { 50% { transform: translateY(-5px); } }
+.fam-scan {
+  position: absolute; inset: 0; pointer-events: none;
+  background: repeating-linear-gradient(180deg, transparent 0 3px, rgba(0,0,0,.22) 3px 4px);
+}
+.fam-copy { padding: 30px 32px 30px !important; color: var(--muted); }
+.fam-kicker {
+  display: block; font-size: 10.5px; letter-spacing: .26em; text-transform: uppercase;
+  color: var(--ember2); margin-bottom: 12px;
+}
+.fam-copy b {
+  color: var(--ink); display: block; font-size: 21px; margin-bottom: 12px;
+  font-family: "Space Grotesk", -apple-system, sans-serif;
+}
+.fam-lead { color: var(--muted); font-size: 14.5px; margin-bottom: 16px; }
+.fam-mods { margin: 0 0 18px; }
+.fam-trust {
+  color: var(--steel); font-size: 13.5px; border-left: 3px solid var(--ember);
+  padding-left: 13px; margin-bottom: 12px;
+}
+.fam-note { color: var(--muted); font-size: 13.5px; margin-bottom: 20px; }
+.fam-cta { font-size: 13px; padding: 13px 26px; }
+.fam-tagline {
+  margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--hair);
+  font-size: 11px; letter-spacing: .22em; text-transform: uppercase; color: var(--dim);
+}
+@media (max-width: 760px) {
+  .spotlight { grid-template-columns: 1fr; }
+  .fam-visual { border-right: 0; border-bottom: 1px solid var(--hair); padding: 30px 22px; }
+  .fam-wall { max-width: 340px; }
+}
+@media (prefers-reduced-motion: reduce) { .ft { animation: none; } }
+
 /* ---------- algoritma → insan dili ---------- */
 .tr-split { display: grid; grid-template-columns: 1fr 60px 1fr; gap: 18px; align-items: stretch; }
 .tr-left { display: flex; flex-direction: column; gap: 10px; }
