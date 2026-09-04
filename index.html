@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IronVision Tools — Yapay zekâyla üretilmiş gerçek işler</title>
+<meta name="description" content="Web sitesi, canlı dashboard, otomasyon. Fikrini anlat; atölye üretir, yapay jüri paneli denetler, 48 saatte ilk taslak önünde.">
+<meta property="og:title" content="IronVision Tools — AI Atölyesi">
+<meta property="og:description" content="Yapay zekâyla üretilmiş, elle cilalanmış işler: site, dashboard, otomasyon.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚒</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- vizör çerçevesi: atölye kaydı overlay -->
+<div class="vf" aria-hidden="true">
+  <span class="vf-c vf-tl"></span><span class="vf-c vf-tr"></span>
+  <span class="vf-c vf-bl"></span><span class="vf-c vf-br"></span>
+  <span class="vf-t vf-rec"><i></i> IVT — ATÖLYE KAYDI</span>
+  <span class="vf-t vf-tc">TC <b id="tc">00:00:00:00</b></span>
+  <span class="vf-t vf-crew">AI CREW · İSTANBUL</span>
+  <span class="vf-t vf-iso">ISO 400 · f/1.8 · 24 FPS</span>
+</div>
+
+<div id="spot" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="brand" href="#top">IRON<span>VISION</span> TOOLS</a>
+  <nav>
+    <a href="#isler">İşler</a>
+    <a href="#surec">Süreç</a>
+    <a href="#hizmet">Hizmetler</a>
+    <a href="#araclar">Araçlar</a>
+    <a class="nav-cta" href="#iletisim">Projeni konuşalım</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"><img src="assets/is-aurelia-hero.jpg" alt=""><i class="scan"></i></div>
+    <p class="kicker">AI ATÖLYESİ · TASARIM + YAZILIM + OTOMASYON</p>
+    <h1>Yapay zekâyla üretilmiş,<br><em>elle cilalanmış</em> işler.</h1>
+    <p class="sub">Web sitesi, canlı dashboard, otomasyon botu — fikrini anlat,
+    atölye üretsin. Her iş yapay jüri panelinden geçmeden teslim edilmez.</p>
+    <div class="cta-row">
+      <a class="btn btn-ember" href="#iletisim">Projeni konuşalım</a>
+      <a class="btn btn-ghost" href="#isler">İşleri gör ⌄</a>
+    </div>
+    <p class="hero-band">İLK TASLAK 48 SAAT · 3 REVİZE DAHİL · JÜRİ DENETİMLİ TESLİM</p>
+  </section>
+
+  <!-- İŞ DUVARI -->
+  <section class="wall-wrap" id="isler">
+    <h2 class="sec-t"><span>01</span> Atölyeden çıkanlar</h2>
+    <p class="sec-sub">Konsept değil — çalışan, canlı işler.</p>
+    <div class="wall" id="wall">
+      <figure class="card big">
+        <img src="assets/is-aurelia-hero.jpg" alt="AURELIA — Kapadokya balon turu sitesi" loading="lazy">
+        <figcaption>
+          <b>AURELIA</b> — Kapadokya balon turu satış sitesi
+          <a class="live" href="https://cappadocia-demo.vercel.app" rel="noopener">canlı gör ↗</a>
+          <span class="tags"><i>11 dil</i><i>4K video hero</i><i>ilk yükleme 3.66 MB</i><i>jüri 4/4 PASS</i></span>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <img src="assets/is-agentos-orb.png" alt="VYRON AgentOS — sesli asistan küresi" loading="lazy">
+        <figcaption>
+          <b>VYRON AgentOS</b> — kişisel yapay zekâ kokpiti
+          <span class="tags"><i>sesli asistan</i><i>canlı paneller</i><i>PWA</i></span>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <img src="assets/is-aurelia-paket.jpg" alt="AURELIA paket ve dönüşüm tasarımı" loading="lazy">
+        <figcaption>
+          <b>Dönüşüm tasarımı</b> — paket / fiyat / güven katmanı
+          <span class="tags"><i>jüri 4/4 PASS</i><i>mobil CTA</i></span>
+        </figcaption>
+      </figure>
+      <figure class="card mock" aria-label="vyronTbot risk paneli temsili">
+        <div class="mockchart">
+          <div class="mc-head">vyronTbot · risk anayasası <span class="mc-dot"></span></div>
+          <div class="mc-bars"><i style="--h:38%"></i><i style="--h:64%"></i><i style="--h:41%"></i><i style="--h:78%"></i><i style="--h:55%"></i><i style="--h:69%"></i><i style="--h:47%"></i><i style="--h:83%"></i></div>
+          <div class="mc-rows"><span>günlük fren −2% · otomatik</span><span>ardışık zarar → soğuma</span><span>karar günlüğü → Telegram</span></div>
+        </div>
+        <figcaption>
+          <b>Algoritmik sistemler</b> — kural tabanlı, denetlenebilir
+          <span class="tags"><i>7/24 bekçi</i><i>Telegram rapor</i></span>
+        </figcaption>
+      </figure>
+
+      <!-- EN YENİ TESLİM: Aile Arşivi Sitesi (spotlight) -->
+      <figure class="card big spotlight" aria-label="Aile Arşivi Sitesi — teslim edilmiş özel aile albümü ürünü">
+        <!-- 3D anı duvarı temsili: soyut karo mozaiği (gerçek fotoğraf yok) -->
+        <div class="fam-visual" aria-hidden="true">
+          <div class="fam-wall">
+            <i class="ft w2 h2 em vid" style="--d:0"></i>
+            <i class="ft" style="--d:1"></i>
+            <i class="ft h2" style="--d:2"></i>
+            <i class="ft em" style="--d:3"></i>
+            <i class="ft vid" style="--d:4"></i>
+            <i class="ft w2" style="--d:5"></i>
+            <i class="ft" style="--d:6"></i>
+            <i class="ft em" style="--d:7"></i>
+            <i class="ft" style="--d:8"></i>
+          </div>
+          <span class="fam-scan"></span>
+        </div>
+        <figcaption class="fam-copy">
+          <span class="fam-kicker">En yeni teslim · özel aile ürünü</span>
+          <b>Aile Arşivi Sitesi</b>
+          <p class="fam-lead">Ailenin yüzlerce fotoğraf ve videosu tek özel adreste toplanır:
+          3D dönen anı duvarı, kronolojik film şeridi ve akıllı albüm. Üstüne, her gün
+          kendini yenileyen paneller ve sesli/yazılı soru asistanı.</p>
+          <div class="tags fam-mods">
+            <i>3D anı duvarı</i><i>film şeridi</i><i>akıllı albüm</i>
+            <i>günün menüsü + tarifler</i><i>"elimde bunlar var" yemek asistanı</i>
+            <i>bugün ne izlesem</i><i>stil köşesi</i><i>radyo köşesi</i>
+            <i>sesli/yazılı asistan</i>
+          </div>
+          <p class="fam-trust">İlk aile sitemiz teslim edildi — ilk kullanıcısı aynı gün
+          kullanmaya başladı.</p>
+          <p class="fam-note">İstediğiniz bölümü seçin — albüm, mutfak, radyo, stil… size göre kurulur.</p>
+          <div class="fam-actions">
+            <a class="btn btn-ember fam-cta" href="#iletisim" data-urun="Aile Arşivi">Demo isteyin</a>
+            <!-- Birincil WhatsApp kanalı: ev hanımı/emekli segmenti formdan çok WhatsApp'ı tercih eder.
+                 Numara app.js'teki WA_NUMARA'ya girilince otomatik aktif olur (wa.me/[WHATSAPP_NUMARASI]);
+                 boşken güvenli şekilde iletişim formuna düşer. -->
+            <a class="btn btn-wa fam-wa" id="famWaBtn" href="#iletisim" data-urun="Aile Arşivi">WhatsApp'tan sorun</a>
+          </div>
+          <div class="fam-tagline">Şifre korumalı · sadece aileye özel</div>
+        </figcaption>
+      </figure>
+    </div>
+
+    <!-- VİTRİN SERİSİ: 10 arketip demo — ilk 3 üretimde (canlı değil, stil demoları) -->
+    <div class="series-head">
+      <h3 class="series-t">Vitrin serisi — 10 iklim, 10 stüdyo</h3>
+      <p class="series-sub">Aynı temanın 10 rengi değil; 10 ayrı dünya. Koyu-kozmik, sıcak-editöryel,
+      serin-atmosferik… Her demo tekrarsız bir palet, font ve <b>imza anı</b> taşır. İlk üçü
+      atölyede üretimde — canlı demolar yolda.</p>
+    </div>
+    <div class="wall series-wall" id="series">
+
+      <!-- 02 · Çöl Yıldız Glamping -->
+      <figure class="card sv-card" aria-label="Çöl yıldız glamping demo konsepti — koyu kozmik">
+        <div class="sv sv-astro" aria-hidden="true">
+          <span class="sv-moon"></span>
+          <svg class="sv-const" viewBox="0 0 240 140" preserveAspectRatio="xMidYMid slice">
+            <polyline points="26,104 66,74 106,90 150,52 196,68 216,38"/>
+            <circle cx="26" cy="104" r="2.2"/><circle cx="66" cy="74" r="2.8"/>
+            <circle cx="106" cy="90" r="2.1"/><circle cx="150" cy="52" r="3.3"/>
+            <circle cx="196" cy="68" r="2.4"/><circle cx="216" cy="38" r="2.6"/>
+          </svg>
+          <span class="sv-horizon"></span>
+          <span class="sv-chip">14 TEM · O GECENİN GÖĞÜ</span>
+        </div>
+        <figcaption>
+          <span class="sv-kicker">Demo 02 · astro-turizm · üretimde</span>
+          <b>Çöl Yıldız Glamping</b> — teleskop eşliğinde gökyüzü gecesi
+          <span class="sv-dots" aria-hidden="true">
+            <i style="--c:#0B0713"></i><i style="--c:#EDE4D3"></i><i style="--c:#7B5CFF"></i><i style="--c:#37E0C4"></i>
+          </span>
+          <span class="tags"><i>koyu-kozmik</i><i>tarihe bağlı gökyüzü haritası</i><i>ay evresi</i><i>gece→şafak scroll</i></span>
+        </figcaption>
+      </figure>
+
+      <!-- 03 · Bağ & Şarap Evi -->
+      <figure class="card sv-card" aria-label="Bağ ve şarap evi demo konsepti — sıcak editöryel">
+        <div class="sv sv-vine" aria-hidden="true">
+          <span class="sv-ring"><b></b></span>
+          <svg class="sv-vinesvg" viewBox="0 0 240 140">
+            <path class="stem" d="M34,124 C64,104 54,78 92,70 C114,65 122,50 116,32"/>
+            <g class="grapes">
+              <circle cx="92" cy="86" r="6"/><circle cx="104" cy="90" r="6"/><circle cx="98" cy="98" r="6"/>
+              <circle cx="86" cy="96" r="6"/><circle cx="110" cy="100" r="6"/><circle cx="98" cy="108" r="6"/>
+            </g>
+            <path class="glass" d="M158,34 Q158,60 176,68 Q194,60 194,34"/>
+            <line class="glass" x1="176" y1="68" x2="176" y2="98"/>
+            <line class="glass" x1="162" y1="102" x2="190" y2="102"/>
+          </svg>
+          <span class="sv-chip vine-chip">HASAT · EYLÜL SOFRASI</span>
+        </div>
+        <figcaption>
+          <span class="sv-kicker">Demo 03 · gastronomi · üretimde</span>
+          <b>Bağ &amp; Şarap Evi</b> — asmadan kadehe, mevsimlik sofra
+          <span class="sv-dots" aria-hidden="true">
+            <i style="--c:#F3EBDD"></i><i style="--c:#241C15"></i><i style="--c:#7A1F2B"></i><i style="--c:#5F6B34"></i><i style="--c:#C0703E"></i>
+          </span>
+          <span class="tags"><i>sıcak-editöryel</i><i>asma→kadeh morph</i><i>mevsim çemberi</i><i>yaşayan menü</i></span>
+        </figcaption>
+      </figure>
+
+      <!-- 06 · Yayla Sis Eko-Lodge -->
+      <figure class="card sv-card" aria-label="Yayla sis eko-lodge demo konsepti — serin atmosferik">
+        <div class="sv sv-mist" aria-hidden="true">
+          <span class="mb zirve"><i>ZİRVE</i></span>
+          <span class="mb alpin"><i>ALPİN ÇAYIR</i></span>
+          <span class="mb orman"><i>ORMAN</i></span>
+          <span class="mb cay"><i>ÇAY BAHÇESİ</i></span>
+          <span class="mist-veil"></span>
+          <span class="mist-veil v2"></span>
+          <span class="sv-chip mist-chip">SİS DAĞILINCA · RAKIM KUŞAKLARI</span>
+        </div>
+        <figcaption>
+          <span class="sv-kicker">Demo 06 · doğa/trekking · üretimde</span>
+          <b>Yayla Sis Eko-Lodge</b> — sis, yeşil ve yükseklik
+          <span class="sv-dots" aria-hidden="true">
+            <i style="--c:#DCE3DB"></i><i style="--c:#1F2A26"></i><i style="--c:#4C6B57"></i><i style="--c:#B5502F"></i><i style="--c:#7C8A82"></i>
+          </span>
+          <span class="tags"><i>serin-atmosferik</i><i>parallax sis perdesi</i><i>rakım kuşakları</i><i>botanik kartları</i></span>
+        </figcaption>
+      </figure>
+
+    </div>
+
+    <p class="series-foot">Beğendiğiniz iklimi seçin — bu dillerden birinde <b>size özel</b> kurulur.
+    <a class="live" href="#iletisim">Bu tarzda site iste ↗</a></p>
+  </section>
+
+  <!-- ALGORİTMA → İNSAN DİLİ -->
+  <section class="translate" id="ceviri">
+    <h2 class="sec-t"><span>02</span> Karmaşığı insan diline çeviriyoruz</h2>
+    <p class="sec-sub">Kod, veri, algoritma… Ekibinin ve müşterinin <b>okuyabildiği</b> ekranlara dönüşür.</p>
+    <div class="tr-split">
+      <div class="tr-left" aria-label="ham veri örneği">
+        <pre>{"bookings_7d":14,"geo":{"DE":9,
+"TR":3,"JP":2},"fri_slots":2,
+"channel":{"form":9,"whatsapp":5}}</pre>
+        <span class="tr-tag">makinenin dili</span>
+      </div>
+      <div class="tr-arrow">→</div>
+      <div class="tr-right" aria-label="insan diline çevrilmiş hali">
+        <div class="tr-card"><b>Bu hafta ne oldu?</b> 14 rezervasyon geldi — 9'u Almanya'dan. WhatsApp kanalı formu yakaladı.</div>
+        <div class="tr-card"><b>Nereye bakmalısın?</b> Cuma sabahı kontenjan doluyor, 2 koltuk kaldı. Fiyatı ya da kotayı bugün güncelle.</div>
+        <span class="tr-tag ember">insanın dili</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SÜREÇ -->
+  <section class="steps" id="surec">
+    <h2 class="sec-t"><span>03</span> Süreç — üç adım</h2>
+    <div class="step-row">
+      <div class="step"><b>1 · Anlat</b><p>Videonu, ürününü ya da derdini gönder. Yarım saatlik bir görüşme yeter.</p></div>
+      <div class="step"><b>2 · Atölye üretir</b><p>AI üretim hattı ilk taslağı çıkarır; <b>6 kişilik yapay jüri paneli</b> (tasarım, performans, dönüşüm, dil) acımasızca denetler, düzeltir. Yani: kör nokta ve "AI özensizliği" sana hiç ulaşmadan yakalanır.</p></div>
+      <div class="step"><b>3 · 48 saatte önünde</b><p>İlk taslak 48 saatte, 3 revize hakkıyla. Beğenmediysen yeniden kurarız.</p></div>
+    </div>
+  </section>
+
+  <!-- HİZMETLER -->
+  <section class="services" id="hizmet">
+    <h2 class="sec-t"><span>04</span> Neler yapıyoruz</h2>
+    <div class="svc-grid">
+      <div class="svc"><b>Kurumsal site & satış sayfası</b><p>Videondan beslenen, rezervasyon/satışa odaklı, çok dilli siteler. Turizm bizim mahalle — 15 yıl sektör deneyimi.</p></div>
+      <div class="svc"><b>Canlı dashboard & kokpit</b><p>Dağınık verini tek ekranda toplayan, konuşan (evet, sesli) yönetim panelleri.</p></div>
+      <div class="svc"><b>Otomasyon & rapor botları</b><p>Kaçan mesajları yakalayan, her sabah rapor bırakan, 7/24 nöbet tutan sistemler.</p></div>
+      <div class="svc"><b>Algoritma görselleştirme</b><p>Trading/karar sistemlerinin ne yaptığını herkesin anlayacağı panellere çeviririz.</p></div>
+    </div>
+    <p class="price-note">Fiyat projeye göre teklifle — ilk görüşme ve kapsam çıkarma ücretsiz.</p>
+  </section>
+
+  <!-- ARAÇLAR -->
+  <section class="tools" id="araclar">
+    <h2 class="sec-t"><span>05</span> Atölyeden ücretsiz araçlar</h2>
+    <p class="sec-sub">Ne ürettiğimizi görmenin en hızlı yolu: kendin kullan. Üyeliksiz, anonim, ücretsiz.</p>
+    <div class="tool-row">
+      <a class="tool" href="https://ironvisiontools.com" rel="noopener">🧮 Vergi & Kripto Hesaplayıcı <span>2026 dilimleriyle güncel</span></a>
+      <span class="tool soon">📅 Yeni araçlar yolda <span>net-brüt · kira vergisi · stopaj</span></span>
+    </div>
+  </section>
+
+  <!-- İLETİŞİM -->
+  <section class="contact" id="iletisim">
+    <h2 class="sec-t"><span>06</span> Projeni konuşalım</h2>
+    <p class="sec-sub">Kısaca yaz; 24 saat içinde dönüş yaparız.</p>
+    <div class="c-grid">
+    <form id="cform" autocomplete="off">
+      <!-- Gizli kaynak/ürün etiketi: hangi karttan gelindiğini maile taşır.
+           Varsayılan "Genel / Turizm"; Aile Arşivi kartındaki CTA'ya tıklanınca "Aile Arşivi" olur. -->
+      <input type="hidden" name="urun" id="urunField" value="Genel / Turizm">
+      <label>Adın <input type="text" name="name" required maxlength="80" placeholder="Adın / firma"></label>
+      <label>E-posta ya da WhatsApp <input type="text" name="contact" required maxlength="120" placeholder="sana nasıl ulaşalım?"></label>
+      <label>Ne yapıyoruz? <textarea name="message" required maxlength="2000" rows="4" placeholder="Derdini anlat: site mi, panel mi, otomasyon mu…"></textarea></label>
+      <button class="btn btn-ember" type="submit">Gönder</button>
+      <p id="cdone" hidden>✔ Aldık. 24 saat içinde dönüyoruz — teşekkürler!</p>
+      <p id="cerr" hidden>⚠ Gönderilemedi — ironvisiontools@gmail.com adresine yazabilirsin.</p>
+    </form>
+    <aside class="c-side">
+      <div class="cs-head">ATÖLYE DURUMU <span class="mc-dot"></span></div>
+      <p><b>Yanıt süresi</b> — 24 saatten kısa</p>
+      <p><b>Konum</b> — İstanbul · GMT+3</p>
+      <p><b>Yeni proje alımı</b> — açık</p>
+      <a id="waBtn" class="btn btn-wa" href="#" hidden>WhatsApp'tan yaz</a>
+      <p class="cs-mail">ya da: ironvisiontools@gmail.com</p>
+    </aside>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span>IRONVISION TOOLS · İSTANBUL</span>
+  <span>ironvisiontools@gmail.com</span>
+  <span class="foot-dim">Bu site de atölyede üretildi — vanilla HTML/CSS/JS, framework yok.</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
